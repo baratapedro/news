@@ -1,6 +1,7 @@
 import axios from 'axios'
 import { Card } from './components/Card'
 import { SearchBar } from './components/SearchBar'
+import { Empty } from './components/Empty'
 
 interface NewsContent {
   title: string
@@ -24,14 +25,18 @@ export default async function Home({ searchParams }: HomeProps) {
   const news: NewsContent[] = response.data.articles
 
   return (
-    <div className="space-y-10 px-5 lg:px-0 mb-10">
+    <div className="px-5 lg:px-0 mb-10 flex-1 flex flex-col">
       <SearchBar />
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-y-5 lg:grid-cols-3">
-        {news.map((item) => {
-          return <Card news={item} key={item.title} />
-        })}
-      </div>
+      {news.length > 0 ? (
+        <div className="grid mt-10 grid-cols-1 md:grid-cols-2 gap-y-5 lg:grid-cols-3">
+          {news.map((item) => {
+            return <Card news={item} key={item.title} />
+          })}
+        </div>
+      ) : (
+        <Empty />
+      )}
     </div>
   )
 }

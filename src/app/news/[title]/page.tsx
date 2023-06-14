@@ -31,7 +31,7 @@ export default async function NewsComponent({ params }: NewsComponentProps) {
   const news: NewsContent = response.data.articles[0]
 
   return (
-    <div className="space-y-4 px-5 lg:px-0">
+    <div className="space-y-5 px-5 lg:px-0 mt-5">
       <Link
         href={'/'}
         className="text-gray-500 flex items-center hover:text-purple-900 transition-colors w-16"
