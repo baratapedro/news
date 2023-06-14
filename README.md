@@ -1,34 +1,39 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## Projeto do Site de Notícias
+Este é o repositório do projeto do site de notícias, uma aplicação web desenvolvida utilizando Next.js (React) e TypeScript. O objetivo do projeto é consumir uma API de notícias e exibir as informações em formato de cards na tela. Cada card contém a foto, o título e a data de publicação da notícia. Além disso, a aplicação possui uma barra de busca que permite pesquisar notícias pelo título. Ao clicar em uma notícia, o usuário é redirecionado para uma página com mais detalhes.
 
-## Getting Started
+## Funcionalidades
+Lista de Notícias: A aplicação consome uma API de notícias para obter os dados e exibi-los em cards. Cada card contém uma imagem representativa da notícia, o título e a data de publicação.
 
-First, run the development server:
+Barra de Busca: Os usuários podem pesquisar notícias pelo título utilizando a barra de busca. A aplicação filtra as notícias em tempo real conforme o usuário digita o termo de busca.
 
-```bash
+Página de Detalhes: Ao clicar em um card de notícia, o usuário é redirecionado para uma página de detalhes que exibe mais informações sobre a notícia selecionada. Isso pode incluir o conteúdo completo da notícia, uma imagem maior, informações adicionais, entre outros.
+
+## Tecnologias Utilizadas
+Next.js: Um framework de desenvolvimento web em React que oferece recursos avançados como renderização do lado do servidor (SSR), geração de páginas estáticas e pré-renderização.
+
+React: Uma biblioteca JavaScript para construção de interfaces de usuário.
+
+TypeScript: Uma linguagem de programação que adiciona tipagem estática ao JavaScript, trazendo benefícios como maior segurança e ferramentas avançadas de autocompletar e refatoração de código.
+
+## Como Usar
+1 - Clone este repositório em sua máquina local:
+git clone https://github.com/baratapedro/news.git
+
+2 - Navegue até o diretório do projeto:
+cd news
+
+3 - Instale as dependências do projeto:
+npm install
+
+4 - Inicie o servidor de desenvolvimento:
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+5 - Abra o navegador e acesse a seguinte URL: http://localhost:3000
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Agora você pode explorar o site de notícias, visualizar os cards com as notícias mais recentes e utilizar a barra de busca para encontrar notícias específicas. Ao clicar em uma notícia, você será redirecionado para a página de detalhes com mais informações sobre ela.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Contribuição
+Contribuições para este projeto são bem-vindas. Se você encontrar algum problema, bug ou tiver sugestões de melhoria, sinta-se à vontade para abrir uma "issue" ou enviar um "pull request".
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Licença
+Este projeto está licenciado sob a MIT License. Sinta-se livre para utilizar, modificar e distribuir o código fonte conforme necessário.
